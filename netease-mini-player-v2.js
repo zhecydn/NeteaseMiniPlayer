@@ -687,7 +687,7 @@ class NeteaseMiniPlayer {
         if (!songData) {
             const apiUrls = [
                 `https://www.bilibili.uno/api?server=netease&type=song&id=${songId}`,
-                `https://api.qijieya.cn/meting/?server=netease&type=song&id=${songId}`,
+                `https://api.qijieya.cn/meting/?type=song&id=${songId}`,
             ];
 
             for (const url of apiUrls) {
