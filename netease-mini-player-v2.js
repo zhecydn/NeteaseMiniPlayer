@@ -686,7 +686,7 @@ class NeteaseMiniPlayer {
         let songData = this.getCache(cacheKey);
         if (!songData) {
             const apiUrls = [
-                `https://www.bilibili.uno/api?server=netease&type=song&id=${songId}`,
+                `https://api.baka.plus/meting/?server=tencent&type=song&id=${songId}`,
                 `https://api.qijieya.cn/meting/?type=song&id=${songId}`,
             ];
 
