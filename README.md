@@ -4,6 +4,7 @@
 
 - 将Api从NeteaseCloudMusicApi换成了Meting Api
 - 新增自动暂停配置项
+- 添加了data-server参数，可填netease/tencent等参数
 
 <div align="center">
 
