@@ -101,6 +101,7 @@ class NeteaseMiniPlayer {
             autoplay: element.dataset.autoplay === "true",
             playlistId: element.dataset.playlistId,
             songId: element.dataset.songId,
+            server: element.dataset.server,
             position: finalPosition,
             lyric: element.dataset.lyric !== "false",
             theme: element.dataset.theme || "auto",
@@ -568,7 +569,7 @@ class NeteaseMiniPlayer {
         for (const baseUrl of apiUrls) {
             try {
                 const queryParams = {
-                    server: "netease",
+                    server: this.config.server,
                     type: "playlist",
                     id: params.id,
                     ...params,
