@@ -2,7 +2,7 @@
  * [NMPv2] NeteaseMiniPlayer v2 JavaScript
  * Lightweight Player Component Based on NetEase Cloud Music API
  *
- * Copyright 2025 BHCN STUDIO & 北海的佰川（ImBHCN[numakkiyu]）
+ * Copyright 2025 BHCN STUDIO & 北海的佰川（ImBHCN[numakkiyu]）由zhecydn按照RhenCloud修改而来
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
