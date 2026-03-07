@@ -4,6 +4,8 @@
 
 - 将Api从NeteaseCloudMusicApi换成了Meting Api
 - 新增自动暂停配置项
+
+- 本版本为zhecydn自用版本，仅仅适用于我自己
 - 添加了data-server参数，可填netease/tencent等参数
 
 <div align="center">
