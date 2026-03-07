@@ -550,10 +550,10 @@ class NeteaseMiniPlayer {
             }, 1000);
         });
         this.audio.addEventListener("abort", () => {
-            console.warn("音频加载被中断");
+            // console.warn("音频加载被中断");
         });
         this.audio.addEventListener("stalled", () => {
-            console.warn("音频加载停滞");
+            //  console.warn("音频加载停滞");
         });
         this.audio.addEventListener("canplay", () => {
             if (this.isPlaying && this.audio.paused) {
@@ -846,6 +846,10 @@ class NeteaseMiniPlayer {
                             break;
                         }
                     } catch (error) {
+                        if (error.name === 'AbortError') {
+                             // 这是正常的中断，不需要 console.warn
+                        return;
+                         }
                         console.warn("从此API获取失败:", error);
                         continue;
                     }
