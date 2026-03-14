@@ -688,9 +688,8 @@ class NeteaseMiniPlayer {
         if (!songData) {
             const apiUrls = [
                 `https://api.qijieya.cn/meting/?type=song&id=${songId}`,
-                `https://api.baka.plus/meting/?server=netease&type=song&id=${songId}`,
-                `https://api.baka.plus/meting/?server=tencent&type=song&id=${songId}`,
-                `https://musicapi.chuyel.top/api?server=tencent&type=song&id=${songId}`,
+                `https://api.baka.plus/meting/?server=${this.config.server}&type=song&id=${songId}`,
+                `https://musicapi.chuyel.top/api?server=${this.config.server}&type=song&id=${songId}`,
             ];
 
             for (const url of apiUrls) {
