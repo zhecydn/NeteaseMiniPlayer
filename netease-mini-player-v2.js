@@ -687,8 +687,8 @@ class NeteaseMiniPlayer {
         let songData = this.getCache(cacheKey);
         if (!songData) {
             const apiUrls = [
-                `https://api.qijieya.cn/meting/?type=song&id=${songId}`,
                 `https://api.baka.plus/meting/?server=${this.config.server}&type=song&id=${songId}`,
+                `https://api.qijieya.cn/meting/?type=song&id=${songId}`,
                 `https://musicapi.chuyel.top/api?server=${this.config.server}&type=song&id=${songId}`,
             ];
 
